@@ -227,6 +227,13 @@ def gene_finder(dna):
 
         dna: a DNA sequence
         returns: a list of all amino acid sequences coded by the sequence dna.
+        
+        Can not test with a doctest because the shuffling will give a different
+        answer everytime--not consistent operation, which means that there
+        can not be an expected answer.
+
+        Instead, test through with logic, with incremental programming, with checking with
+        a friend/rubber-ducking it with a friend.
     """
     threshold = longest_ORF_noncoding(dna,1500)
     gene_finder_list = []
